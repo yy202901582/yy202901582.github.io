@@ -226,6 +226,10 @@
 <li>第二项<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[baidu](https://www.baidu.com/)</span><br><span class="line">&lt;https://www.baidu.com/&gt;</span><br></pre></td></tr></table></figure>
 <a href="https://www.baidu.com/" target="_blank" rel="noopener">baidu</a><br><a href="https://www.baidu.com/" target="_blank" rel="noopener">https://www.baidu.com/</a></li>
 </ul>
+<p>链接的其他方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">这个链接用 1 作为网址变量 [Google][1]</span><br><span class="line">-----------------------</span><br><span class="line">[1]: http://www.google.com/</span><br></pre></td></tr></table></figure>
+<h2 id="这个链接用-1-作为网址变量-Google"><a href="#这个链接用-1-作为网址变量-Google" class="headerlink" title="这个链接用 1 作为网址变量 Google"></a>这个链接用 1 作为网址变量 <a href="http://www.google.com/" target="_blank" rel="noopener">Google</a></h2><h3 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">创建脚注格式类似这样 [^TEXT]。</span><br><span class="line"></span><br><span class="line">[^TEXT]: 脚注的内容</span><br></pre></td></tr></table></figure>
+<p>创建脚注格式类似这样 <a href="脚注的内容">^TEXT</a>。</p>
 <h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![示例](https://static-event.benghuai.com/new_mihoyo_homepage/images/download/cg/origin/2018-10-18.jpg)</span><br><span class="line">&lt;img src=&quot;https://static-event.benghuai.com/new_mihoyo_homepage/images/download/cg/origin/2018-10-18.jpg&quot;&gt;</span><br></pre></td></tr></table></figure>
 <p><img src="https://static-event.benghuai.com/new_mihoyo_homepage/images/download/cg/origin/2018-10-18.jpg" alt="示例"></p>
 <h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">|  表头   | 表头  |</span><br><span class="line">|  ----  | ----  |</span><br><span class="line">| 1  | 1 |</span><br><span class="line">| 1  | 1 |</span><br><span class="line"></span><br><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 1 | 1 | 1 |</span><br><span class="line">| 1 | 1 | 1 |</span><br></pre></td></tr></table></figure>
@@ -267,7 +271,13 @@
 <h3 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h3><p>Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">\   反斜线</span><br><span class="line">`   反引号</span><br><span class="line">*   星号</span><br><span class="line">_   下划线</span><br><span class="line">&#123;&#125;  花括号</span><br><span class="line">[]  方括号</span><br><span class="line">()  小括号</span><br><span class="line">#   井字号</span><br><span class="line">+   加号</span><br><span class="line">-   减号</span><br><span class="line">.   英文句点</span><br><span class="line">!   感叹号</span><br></pre></td></tr></table></figure>
 <p>如:  \   `  !  *  _  ()</p>
-
+<h3 id="支持的html元素"><a href="#支持的html元素" class="headerlink" title="支持的html元素"></a>支持的html元素</h3><p>目前支持的 HTML 元素有：<kbd> <b> <i> <em> <sup> <sub> <br>等</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使用 &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;Del&lt;/kbd&gt; 重启电脑</span><br></pre></td></tr></table></figure>
+<p>使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑</p>
+<h3 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1、横向流程图源码格式：</span><br><span class="line">```mermaid</span><br><span class="line">graph LR</span><br><span class="line">A[方形] --&gt;B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt;|a=1| D[结果1]</span><br><span class="line">    C --&gt;|a=2| E[结果2]</span><br><span class="line">    F[横向流程图]</span><br></pre></td></tr></table></figure>
+<p>2、竖向流程图源码格式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">A[方形] --&gt; B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt; |a=1| D[结果1]</span><br><span class="line">    C --&gt; |a=2| E[结果2]</span><br><span class="line">    F[竖向流程图]</span><br></pre></td></tr></table></figure>
+<pre><code></code></pre>
     </div>
 </article>
 
@@ -350,12 +360,6 @@
                 </span>
             </li>
             
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2019/10/23/java/">java数据类型</a>
-                </span>
-            </li>
-            
         </ul>
     </div>
 </aside>
@@ -387,12 +391,6 @@
             <li class="list-group-item">
                 <span class="post-title">
                     <a href="/2019/10/23/md%E6%96%87%E4%BB%B6%E4%B9%A6%E5%86%99%E8%A7%84%E8%8C%83/">markdown文件</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2019/10/23/java/">java数据类型</a>
                 </span>
             </li>
             
