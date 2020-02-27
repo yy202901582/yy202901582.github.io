@@ -13,7 +13,7 @@
     
     
     
-    <title>archive_a | neko</title>
+    <title>problem | neko</title>
     <link href="http://yoursite.com" rel="prefetch" />
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -98,7 +98,7 @@
                 
                 
                 
-                <li class="current">
+                <li class="">
                     <a href="/archives">
                         <i class="fa fa-archive"></i>归档
                     </a>
@@ -141,19 +141,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-archive">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="http://yoursite.com">neko</a>
         >
-        <span>归档</span>
+        <span>problem</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/archives">归档</a>
+                <a href="/2020/02/26/problem/">problem</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2020-02-26
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -161,48 +169,25 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/archives">归档</a>
+                    <a href="/2020/02/26/problem/">problem</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2020-02-26
+            </p>
+            <p>
+                
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        
-        
-            <h1 style="font-size: 24px; margin-top: 40px;">2020年</h1>
-            
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-             
-             
-                        <a href="/2020/02/27/git%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/">git上传文件</a>
-                        <br>
-            
-             
-                        <a href="/2020/02/26/problem/">problem</a>
-                        <br>
-            
-             
-                        <a href="/2020/02/26/Spring%E5%88%9D%E8%AF%95/">Spring初试</a>
-                        <br>
-            
-             
-                        </div>
-                    <h1 style="font-size: 24px; margin-top: 40px;">2019年</h1>
-                    <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-                 
-             
-                        <a href="/2019/10/23/md%E6%96%87%E4%BB%B6%E4%B9%A6%E5%86%99%E8%A7%84%E8%8C%83/">markdown文件</a>
-                        <br>
-            
-             
-                        <a href="/2019/10/23/java/">java数据类型</a>
-                        <br>
-            
-                    </div>
-        
+    <div class="content-article">
+        <h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p>找到长度的最小数目N，使得所有数字同时整除2,3,5,7,数字的长度是其十进制表示形式中没有前导零的位数。<br>输入值：单个输入线包含一个整数Ñ（1≤ N≤10^5）。<br>输出量：打印单个整数-不带前导零的问题答案，如果不存在满足问题条件的数字，则打印“ -1 ”（不带引号）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">import java.util.Scanner;</span><br><span class="line"></span><br><span class="line">public class TestMain &#123;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        Scanner input = new Scanner(System.in);</span><br><span class="line">        int last = input.nextInt();</span><br><span class="line">        int h;</span><br><span class="line">        if(last&lt;3)&#123;</span><br><span class="line">            System.out.println(-1);</span><br><span class="line">        &#125;else if(last==3)&#123;</span><br><span class="line">            System.out.println(210);</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            String[] list;</span><br><span class="line">            list = new String[7];</span><br><span class="line">            list[0] = &quot;&quot;;</span><br><span class="line">            for(int a=4;a&lt;4+6;a++)</span><br><span class="line">            &#123;</span><br><span class="line">                int x=0;</span><br><span class="line">                h = 10*((int)Math.pow(10, a-2)+2+x*3);</span><br><span class="line">                while(h%7!=0) &#123;</span><br><span class="line">                    x++;</span><br><span class="line">                    h = 10*((int)Math.pow(10, a-2)+2+x*3);</span><br><span class="line">                &#125;</span><br><span class="line">                h = 10*(2+x*3);</span><br><span class="line">                list[a-3] = Integer.toString(h);</span><br><span class="line">            &#125;</span><br><span class="line">            list[0] =list[6];</span><br><span class="line">            String count=&quot;1&quot;;</span><br><span class="line">            for(int c = 1;c&lt;last-list[(last-3)%6].length();c++)&#123;</span><br><span class="line">                count = count+&quot;0&quot;;</span><br><span class="line">            &#125;</span><br><span class="line">            count = count+list[(last-3)%6];</span><br><span class="line">            System.out.println(count);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -344,17 +329,17 @@
 
                 
                 <li>
-                    <a href="/archives/2019/10/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2020/02/26/problem/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/archives/2019/10/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2020/02/26/problem/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/archives/2019/10/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2020/02/26/problem/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
