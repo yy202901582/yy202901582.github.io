@@ -188,6 +188,15 @@
 </article>
 
 
+<div id="comments-template"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script>
+	if(!window.commentConfig) {
+      window.commentConfig = {}
+      window.commentConfig.title = 'git上传文件'
+    }
+</script>
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -296,13 +305,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/02/27/git%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/">git上传文件</a>
+                    <a href="/2020/02/27/github%E7%9A%84%E8%AE%A4%E8%AF%86%E4%B8%8E%E4%BD%BF%E7%94%A8/">github的认识与使用</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2020/02/27/github%E7%9A%84%E8%AE%A4%E8%AF%86%E4%B8%8E%E4%BD%BF%E7%94%A8/">github的认识与使用</a>
+                    <a href="/2020/02/27/git%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/">git上传文件</a>
                 </span>
             </li>
             
@@ -453,5 +462,27 @@
 <script src="/js/blog.js"></script>
 
 
+
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Thu Feb 27 2020 12:29:42 GMT+0800'
+      window.commentConfig.owner = 'id'
+      window.commentConfig.repo = '111'
+      window.commentConfig.client_id = '111'
+      window.commentConfig.client_secret = '111'
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: 'Thu Feb 27 2020 12:29:42 GMT+0800',
+        owner: 'id',
+        repo: '111',
+        client_id: '111',
+        client_secret: '111',
+        redirect_uri: ''
+      }
+    }
+</script>
+<script src="/js/comment/gitment.js"></script>
 
 </html>
